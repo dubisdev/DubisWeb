@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 
 const pagenames = ["inicio", "proyectos" /*"contacto"*/] as const;
 
@@ -40,7 +40,11 @@ const getPathHash = (): typeof pagenames[number] => {
 
 const NavBar = () => {
   const [openResponsiveMenu, setOpenResponsiveMenu] = useState(false);
-  const [pathName, setPathName] = useState(getPathHash);
+  const [pathName, setPathName] = useState("");
+
+  useEffect(() => {
+    setPathName(getPathHash());
+  }, []);
 
   const handleClickResponsive = () => {
     setOpenResponsiveMenu(!openResponsiveMenu);
