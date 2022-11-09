@@ -65,7 +65,7 @@ const Home = () => (
           description="Editor de letras y acordes creado con Next.js, TailwindCss y
           PostgreSQL. Utiliza Supabase como backend para la autenticación y
           la base de datos."
-          img="./images/projects/space-tourism.jpg"
+          img="./songwrite.webp"
         />
 
         <Project
@@ -74,7 +74,7 @@ const Home = () => (
           title="AddTodoist TW Bot"
           description="Bot de Twitter que permite agregar tareas a Todoist a partir de
           twits. Creado con Node.js, Typescript y MongoDB (mongoose)."
-          img="./images/projects/space-tourism.jpg"
+          img="/addtodoist.png"
         />
 
         <Project
@@ -84,7 +84,7 @@ const Home = () => (
           description="Cerebro es un lanzador de aplicaciones extensible y
           multiplataforma, creado con Electron y React. Soy mantenedor de
           todo el proyecto (desarrollo, plugins, documentación, etc)."
-          img="./images/projects/space-tourism.jpg"
+          img="/cerebro.png"
         />
       </div>
     </main>
