@@ -50,6 +50,9 @@ body {
   padding: 35px 80px;
   transition: 0.6s;
   z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.388);
+  backdrop-filter: blur(5px);
+
 }
 
 .nav__menu__li {
@@ -104,47 +107,6 @@ body {
   z-index: 2000;
 }
 
-.home__title {
-  white-space: nowrap;
-  letter-spacing: 1px;
-}
-
-.home__title.h2 {
-  font-size: 2.625em;
-  color: var(--colorText);
-}
-
-.home__title.h1 {
-  font-size: 3.75em;
-  margin: 0;
-  margin-top: -8px;
-  color: var(--colorPrimary);
-}
-
-.home__title.h3 {
-  font-size: 1.375em;
-  margin-top: -2px;
-  color: var(--colorText);
-}
-
-.home__paragraph {
-  font-size: 1.375em;
-  font-weight: 300;
-  max-width: 825px;
-  letter-spacing: 1px;
-  margin-top: 27px;
-  margin-bottom: 22px;
-  color: var(--colorText);
-  line-height: 41px;
-}
-
-.social {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  column-gap: 35px;
-}
-
 .social__a {
   padding: 12px;
   border-radius: 50%;
@@ -164,25 +126,15 @@ body {
   cursor: pointer;
 }
 
-.social__a:hover .fa-github {
-  color: #5564eb;
-}
-
-.social__a:hover .fa-twitter {
-  color: #00acee;
-}
-
-.social__a:hover .fa-linkedin {
-  color: #0e76a8;
-}
-
 .home__container-img {
   position: relative;
   z-index: 100;
 }
 
 .home__container-img__img {
-  height: 500px;
+  object-fit: contain;
+  border-radius: 100%;
+  height: 396px;
   width: 396px;
   -webkit-box-reflect: below -8% linear-gradient(transparent, transparent, transparent, #00000033);
 }
@@ -200,13 +152,15 @@ body {
 }
 
 .title {
+  padding-top: 110px;
+  padding-bottom: 20px;
   position: relative;
   text-align: center;
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 2.4px;
   color: #fff;
-  padding: 20px;
+
   margin-bottom: 45px;
 }
 
@@ -396,7 +350,7 @@ body {
   margin-left: 21px;
 }
 
-#projects {
+#proyectos {
   padding: 90px 50px 0;
   min-height: 95vh;
   display: flex;
@@ -510,7 +464,7 @@ body {
   text-decoration: underline;
 }
 
-#skills {
+#habilidades {
   min-height: 80vh;
   padding: 90px 50px 0;
   display: flex;
@@ -687,15 +641,9 @@ body {
     font-size: 14px;
   }
 
-  .home__paragraph {
-    margin-top: 20px;
-    margin-bottom: 19px;
-    line-height: 33px;
-    max-width: 730px;
-  }
-
   .home__container-img__img {
-    height: 350px;
+    height: 300px;
+    width: 300px;
     width: auto;
     -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, transparent, #04060f25);
   }
@@ -720,20 +668,6 @@ body {
 
   .home__text {
     font-size: 12.2px;
-  }
-
-  .home__paragraph {
-    line-height: 26px;
-    margin-top: 13px;
-  }
-
-  .home__title.h1 {
-    font-size: 3.1em;
-    line-height: 43px;
-  }
-
-  .home__paragraph {
-    font-size: 19px;
   }
 
   .title {
@@ -774,8 +708,8 @@ body {
     font-size: 2.8em;
   }
 
-  #projects,
-  #skills {
+  #proyectos,
+  #habilidades {
     padding-left: 8.5%;
     padding-right: 8.5%;
   }
@@ -919,10 +853,6 @@ body {
     height: 300px;
   }
 
-  .home__paragraph {
-    font-size: 17px;
-  }
-
   .services__card {
     font-size: 12px;
   }
@@ -961,32 +891,6 @@ body {
 
   .home__container-img__img {
     height: 290px;
-  }
-
-  .home__text {
-    font-size: 11px;
-    padding: 13px 17px;
-  }
-
-  .home__title.h2 {
-    font-size: 2.1em;
-  }
-
-  .home__title.h1 {
-    line-height: 39px;
-    font-size: 2.4em;
-    margin-top: -1px;
-    margin-bottom: 4px;
-    white-space: inherit;
-    line-height: 23px;
-  }
-
-  .home__title.h3 {
-    font-size: 17px;
-  }
-
-  .home__paragraph {
-    letter-spacing: 0;
   }
 
   .modal-container {

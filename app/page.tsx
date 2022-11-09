@@ -22,30 +22,36 @@ const Home = () => (
   <>
     <header className="home" id="home">
       <StarsBG />
-      <article className="home__text">
-        <h2 className="home__title h2">👋 ¡Hola! Soy</h2>
-        <h1 className="home__title h1">David Jiménez</h1>
-        <h3 className="home__title h3">Desarrollador de Software</h3>
-        <p className="home__paragraph">
+      <article className="px-3 pt-2 z-10 justify-center">
+        <h2 className="text-white text-center text-3xl sm:text-left sm:text-4xl md:text-5xl">
+          👋 ¡Hola! Soy
+        </h2>
+        <h1 className="text-blue-600 font-bold text-center text-4xl sm:text-left sm:text-5xl md:text-7xl">
+          David Jiménez
+        </h1>
+        <h3 className="text-white text-center text-xl sm:text-left sm:text-2xl md:text-4xl">
+          Desarrollador de Software
+        </h3>
+        <p className="text-white mt-5 px-4 sm:p-0 text-base md:max-w-xl md:text-xl xl:mt-10 xl:text-2xl xl:max-w-2xl">
           Creo productos digitales que ayudan a las personas a resolver sus
           problemas. Soy un apasionado de la programación, el deporte y la
           música. Actualmente estudio Ingeniería de Servicios en la Universidad
           Rey Juan Carlos.
         </p>
-        <div className="social">
+        <div className="px-4 mt-10 sm:mt-5 sm:p-0 flex gap-9 justify-center sm:justify-start items-center">
           <SocialIcon href="https://github.com/dubisdev" icon={<GH />} />
           <SocialIcon
             href="https://www.linkedin.com/in/davidjmz/"
             icon={<Linkedin />}
           />
-          <SocialIcon href="https://twitter.com/dubisdev" icon={<Tw />} />
+          <SocialIcon href="https://twitter.com/dubisdotdev" icon={<Tw />} />
         </div>
       </article>
       <div className="home__container-img">
         <img
           className="home__container-img__img"
-          src="https://avatars.githubusercontent.com/u/77246331"
-          alt="Imagen ilustrativa programando"
+          src="/profile.png"
+          alt="Foto de perfil"
         />
       </div>
     </header>
@@ -82,7 +88,7 @@ const Home = () => (
         />
       </div>
     </main>
-    <div className="skills" id="skills">
+    <div className="skills" id="habilidades">
       <h2 className="title">Habilidades</h2>
       <div className="skills__container">
         <ul className="skills__lista">
@@ -97,54 +103,9 @@ const Home = () => (
         </ul>
       </div>
     </div>
-    {/* <footer className="contact" id="contact">
-  <div className="contact__window">
-    <span className="contact__window__span">
-      Correo enviado con exito!
-    </span>
-  </div>
-  <h2 className="title">Contáctame</h2>
-  <form
-    action="https://formspree.io/f/mjvjjqgw"
-    method="POST"
-    className="contact__form"
-  >
-    <label className="contact__form__title">
-      ¿Tienes algún proyecto web en mente? Para más información envíame un
-      email sobre el proyecto que tienes planeado y en seguida nos ponemos
-      en contacto 🧑‍💻
-    </label>
-    <input
-      name="name"
-      id="name"
-      className="contact__input"
-      type="text"
-      placeholder="Nombre"
-      required
-    />
-    <input
-      name="email"
-      id="email"
-      className="contact__input"
-      type="email"
-      placeholder="Correo Electronico"
-      pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-      required
-    />
-    <textarea
-      name="message"
-      id="message"
-      className="contact__input msg"
-      type="text"
-      placeholder="Mensaje"
-      required
-      maxlength="255"
-    ></textarea>
-    <button type="submit" className="projects__card__btn contact__send">
-      Enviar
-    </button>
-  </form>
-</footer> */}
+    <footer className="text-white py-2 text-center mt-14">
+      Hecho con ❤️ por David
+    </footer>
   </>
 );
 

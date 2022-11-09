@@ -2,7 +2,7 @@
 
 import { FC, useEffect, useState } from "react";
 
-const pagenames = ["inicio", "proyectos" /*"contacto"*/] as const;
+const pagenames = ["inicio", "proyectos", "habilidades"] as const;
 
 type MenuLinkProps = {
   href: string;
@@ -55,30 +55,36 @@ const NavBar = () => {
       id="navbar"
       className="nav first-letter:fixed top-0 left-0 w-full flex items-center justify-between py-9 px-20 transition z-50"
     >
-      <a href="#home">
+      <a href="/" className="inline-flex items-center gap-5">
         <img
           src="https://avatars.githubusercontent.com/u/77246331"
-          alt="Iágen de perfil de David Jiménez"
-          className="h-14 object-cover rounded-full"
+          alt="Imagen de perfil de David Jiménez"
+          className="hidden sm:block h-14 object-cover rounded-full"
         />
+        <span className="text-white font-bold text-xl sm:text-4xl">
+          DUBISDEV
+        </span>
       </a>
       <ul
         className={`nav__menu flex items-center justify-center gap-12 + ${
           openResponsiveMenu ? " menuResponsive" : ""
         }`}
       >
-        {pagenames.map((pagename) => (
-          <MenuLink
-            key={pagename}
-            active={pagename.toLowerCase() === pathName}
-            href={`#${pagename.toLowerCase()}`}
-            content={pagename}
-            onClick={() => {
-              setPathName(pagename.toLowerCase() as typeof pagenames[number]);
-              setOpenResponsiveMenu(false);
-            }}
-          />
-        ))}
+        {pagenames.map((pagename) => {
+          const url = pagename === "inicio" ? "/" : `#${pagename}`;
+          return (
+            <MenuLink
+              key={pagename}
+              active={pagename.toLowerCase() === pathName}
+              href={url}
+              content={pagename}
+              onClick={() => {
+                setPathName(pagename.toLowerCase() as typeof pagenames[number]);
+                setOpenResponsiveMenu(false);
+              }}
+            />
+          );
+        })}
       </ul>
       <div onClick={handleClickResponsive} className="btn-responsive">
         <div className="line"></div>
