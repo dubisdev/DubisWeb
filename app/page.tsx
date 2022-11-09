@@ -50,7 +50,7 @@ const Home = () => (
       <div className="home__container-img">
         <img
           className="home__container-img__img"
-          src="/profile.png"
+          src="/profile.webp"
           alt="Foto de perfil"
         />
       </div>
