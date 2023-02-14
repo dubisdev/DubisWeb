@@ -78,6 +78,16 @@ const Home = () => (
         />
 
         <Project
+          url="https://github.com/dubisdev/runmath"
+          codeUrl="https://github.com/dubisdev/runmath"
+          title="RunMath"
+          description="Alternativa a la calculadora de Windows, creada con Tauri y React.
+          Permite a los usuarios ejecutar operaciones matemáticas de forma rápida y sencilla,
+          sin necesidad de utilizar el ratón."
+          img="/runmath.png"
+        />
+
+        <Project
           url="https://cerebroapp.vercel.app/"
           codeUrl="https://github.com/cerebroapp/cerebro"
           title="CerebroApp"
