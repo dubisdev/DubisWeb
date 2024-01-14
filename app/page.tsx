@@ -59,8 +59,8 @@ const Home = () => (
       <h2 className="title">Proyectos</h2>
       <div className="projects__grid">
         <Project
-          url="https://github.com/dubisdev/runmath?tab=readme-ov-file"
-          codeUrl="https://github.com/dubisdev/runmath?tab=readme-ov-file"
+          url="https://github.com/dubisdev/runmath#readme"
+          codeUrl="https://github.com/dubisdev/runmath#readme"
           title="RunMath"
           description="Con más de 1,8K descargas. Esta alternativa a la calculadora de Windows permite a los usuarios ejecutar operaciones matemáticas de forma rápida y sencilla,
           sin necesidad de utilizar el ratón. Creada con Tauri y React."
