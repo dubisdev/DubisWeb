@@ -6,13 +6,13 @@ import SocialIcon from "../components/SocialIcon";
 import StarsBG from "../components/StarsBG";
 
 const skills = [
-  { name: "HTML", iconSrc: "./skills/html.svg" },
-  { name: "JavaScript", iconSrc: "./skills/javascript.svg" },
   { name: "TypeScript", iconSrc: "./skills/typescript.svg" },
+  { name: "JavaScript", iconSrc: "./skills/javascript.svg" },
   { name: "React", iconSrc: "./skills/react.svg" },
+  { name: "Tauri", iconSrc: "./skills/tauri.svg" },
+  { name: "Node.js", iconSrc: "./skills/node-js.svg" },
   { name: "TailwindCSS", iconSrc: "./skills/tailwindcss.svg" },
   { name: "Git", iconSrc: "./skills/git.svg" },
-  { name: "Node.js", iconSrc: "./skills/node-js.svg" },
   { name: "Express", iconSrc: "./skills/expressjs.svg" },
   { name: "MongoDB", iconSrc: "./skills/mongodb.svg" },
   { name: "Next.js", iconSrc: "./skills/nextjs.svg" },
@@ -59,7 +59,33 @@ const Home = () => (
       <h2 className="title">Proyectos</h2>
       <div className="projects__grid">
         <Project
-          url="https://songwrite.app/"
+          url="https://github.com/dubisdev/runmath"
+          codeUrl="https://github.com/dubisdev/runmath"
+          title="RunMath"
+          description="Con más de 1,8K descargas. Esta alternativa a la calculadora de Windows permite a los usuarios ejecutar operaciones matemáticas de forma rápida y sencilla,
+          sin necesidad de utilizar el ratón. Creada con Tauri y React."
+          img="./runmath.png"
+        />
+
+        <Project
+          url="https://rokii.app/"
+          codeUrl="https://github.com/RokiiApp"
+          title="Rokii"
+          description="Rokii es un lanzador de aplicaciones extensible para Windows. Creado con Tauri y React."
+          img="https://raw.githubusercontent.com/RokiiApp/.github/main/assets/rokii.gif"
+        />
+
+        <Project
+          url="https://twitter.com/AddTodoist/"
+          codeUrl="https://github.com/AddTodoist/AddTodoist"
+          title="AddTodoist TW Bot"
+          description="Bot de Twitter con más de 300 usuarios. Permite agregar tareas a Todoist a partir de
+          twits. Creado con Node.js, Typescript y MongoDB (mongoose). Actualmente no está en funcionamiento debido a las tarifas de la API de Twitter."
+          img="/addtodoist.png"
+        />
+
+        <Project
+          url="https://songwriteapp.vercel.app/"
           codeUrl="https://github.com/dubisdev/songwriteapp"
           title="SongWrite.app"
           description="Editor de letras y acordes creado con Next.js, TailwindCss y
@@ -68,34 +94,6 @@ const Home = () => (
           img="./songwrite.webp"
         />
 
-        <Project
-          url="https://twitter.com/AddTodoist/"
-          codeUrl="https://github.com/AddTodoist/AddTodoist"
-          title="AddTodoist TW Bot"
-          description="Bot de Twitter que permite agregar tareas a Todoist a partir de
-          twits. Creado con Node.js, Typescript y MongoDB (mongoose)."
-          img="/addtodoist.png"
-        />
-
-        <Project
-          url="https://github.com/dubisdev/runmath"
-          codeUrl="https://github.com/dubisdev/runmath"
-          title="RunMath"
-          description="Alternativa a la calculadora de Windows, creada con Tauri y React.
-          Permite a los usuarios ejecutar operaciones matemáticas de forma rápida y sencilla,
-          sin necesidad de utilizar el ratón."
-          img="/runmath.png"
-        />
-
-        <Project
-          url="https://cerebroapp.vercel.app/"
-          codeUrl="https://github.com/cerebroapp/cerebro"
-          title="CerebroApp"
-          description="Cerebro es un lanzador de aplicaciones extensible y
-          multiplataforma, creado con Electron y React. Soy mantenedor de
-          todo el proyecto (desarrollo, plugins, documentación, etc)."
-          img="/cerebro.png"
-        />
       </div>
     </main>
     <div className="skills" id="habilidades">

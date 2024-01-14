@@ -362,7 +362,7 @@ body {
 .projects__grid {
   width: 100%;
   display: grid;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   row-gap: 90px;
@@ -411,7 +411,7 @@ body {
 }
 
 .projects__card__paragraph {
-  max-width: 360px;
+  max-width: 400px;
   font-size: 20px;
   font-weight: 300;
   margin: 11px 0 30px;
@@ -727,7 +727,7 @@ body {
   }
 
   .projects__card__paragraph {
-    max-width: 334px;
+    max-width: 400px;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
